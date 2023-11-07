@@ -6,7 +6,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/femine-logo.svg';
+import logo from '~/public/images/logo.png';
 import useStyles from './sidenav-icon-style';
 import navMenu from './menu';
 
@@ -34,8 +34,7 @@ function SideNavigation() {
     createData(navMenu[1], '#' + navMenu[1], 'ion-ios-add-circle-outline'),
     createData(navMenu[2], '#' + navMenu[2], 'ion-ios-keypad-outline'),
     createData(navMenu[3], '#' + navMenu[3], 'ion-ios-chatboxes-outline', -40),
-    createData(navMenu[4], '#' + navMenu[4], 'ion-ios-copy-outline'),
-    createData(navMenu[5], '#' + navMenu[5], 'ion-ios-mail-outline'),
+    createData(navMenu[4], '#' + navMenu[4], 'ion-ios-mail-outline'),
   ]);
   return (
     <div className={classes.navigation}>
