@@ -39,10 +39,10 @@ function Form() {
     // Send the email
     emailjs
       .send(
-        'service_z3gq3wg',
-        'template_k4h8shh',
-         emailParams,
-        'TSTMAr0NyGDaWbvz4'
+        process.env.NEXT_SERVICE_ID,
+        process.env.NEXT_TEMPLATE_ID,
+        emailParams,
+        process.env.NEXT_USER_ID,
       )
       .then(
         (response) => {
