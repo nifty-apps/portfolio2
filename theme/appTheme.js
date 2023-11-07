@@ -126,7 +126,7 @@ const appTheme = (color, mode) => ({
           backgroundColor: palette[color].palette.primary.light,
           color: palette[color].palette.primary.dark,
           '&:hover': {
-            backgroundColor: darken(palette[color].palette.primary.light, 0.1)
+            backgroundColor: darken(palette[color].palette.secondary.light, 0.1)
           }
         },
         root: {
