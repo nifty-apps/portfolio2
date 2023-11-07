@@ -17,7 +17,7 @@ import Counter from '~/components/Counter';
 import Services from '~/components/Services';
 import Gallery from '~/components/Gallery';
 import Testimonials from '~/components/Testimonials';
-import Blog from '~/components/Blog';
+// import Blog from '~/components/Blog';
 import Footer from '~/components/Footer';
 import PageNav from '~/components/PageNav';
 import Decoration from '~/components/Parallax/Decoration';
@@ -53,19 +53,22 @@ const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
     marginTop: theme.spacing(10)
   },
   containerWrap: {
-    marginTop: -40,
+    marginBottom: 0,
     '& > section': {
       position: 'relative'
     }
   },
   parallaxWrap: {
-    position: 'relative'
+    position: 'relative',
   },
   bottomDeco: {
-    top: -200,
+    top: -90,
     position: 'absolute',
     width: '100%',
-    height: 'calc(100% + 200px)'
+    height: 'calc(100% + 50px)',
+    [theme.breakpoints.down('md')]: {
+      top: -40,
+    }
   }
 }));
 
@@ -115,9 +118,9 @@ function Landing(props) {
             <div className={classes.bottomDeco}>
               <Decoration />
             </div>
-            <section id="blog" className={classes.spaceTopShort}>
+            {/* <section id="blog" className={classes.spaceTopShort}>
               <Blog />
-            </section>
+            </section> */}
             <section id="contact" className={classes.spaceTop}>
               <Footer />
             </section>
