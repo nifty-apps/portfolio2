@@ -18,7 +18,6 @@ function Form() {
     name: '',
     email: '',
     phone: '',
-    company: '',
     message: ''
   });
 
