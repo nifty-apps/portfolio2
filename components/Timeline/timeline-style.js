@@ -23,9 +23,9 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
     fontWeight: theme.typography.fontWeightRegular,
     textTransform: 'uppercase',
     color: theme.palette.common.black,
-    top: theme.spacing(30),
-    left: theme.spacing(-5),
-    fontSize: 72,
+    top: theme.spacing(40),
+    left: theme.spacing(-10),
+    fontSize: 60,
     opacity: 0.1,
     zIndex: 20,
   },
@@ -113,7 +113,7 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
       padding: 0,
       '& li': {
         listStyle: 'none',
-        marginBottom: theme.spacing(5),
+        marginBottom: theme.spacing(3),
         '&:last-child': {
           marginBottom: 0
         },
@@ -127,9 +127,10 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
     marginBottom: theme.spacing(1),
     display: 'flex',
     alignItems: 'center',
-    '& i': {
+    '& img': {
       color: theme.palette.text.secondary,
-      fontSize: 28
+      width: 32,
+      height: 32
     },
     '& h6': {
       marginLeft: theme.spacing()
@@ -139,6 +140,11 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
     borderRadius: 10,
     background: theme.palette.divider,
     height: 10
+  },
+  textParentage: {
+    fontSize: 16,
+    color: theme.palette.secondary.main,
+    fontWeight: theme.typography.fontWeightBold
   },
   bar: {
     borderRadius: 10,
