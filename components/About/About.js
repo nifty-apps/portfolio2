@@ -32,7 +32,7 @@ function About() {
                     <figure>
                       <img src="/images/femine/reward1.svg" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>Special Mention</Typography>
+                    <Typography component="p" className={text.paragraph}>Special Programming</Typography>
                     <Typography variant="h5">Awards</Typography>
                   </div>
                 </div>
@@ -41,7 +41,7 @@ function About() {
                     <figure>
                       <img src="/images/femine/reward2.svg" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>100k videos</Typography>
+                    <Typography component="p" className={text.paragraph}>10k videos</Typography>
                     <Typography variant="h5">Subscriber</Typography>
                   </div>
                 </div>
@@ -50,8 +50,8 @@ function About() {
                     <figure>
                       <img src="/images/femine/reward3.svg" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>Best Filmography</Typography>
-                    <Typography variant="h5">Footage</Typography>
+                    <Typography component="p" className={text.paragraph}>Best Design</Typography>
+                    <Typography variant="h5">Awards</Typography>
                   </div>
                 </div>
               </div>
