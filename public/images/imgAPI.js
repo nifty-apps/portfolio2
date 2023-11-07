@@ -29,7 +29,7 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   femine: [
-    'https://via.placeholder.com/352x352/d63981/FFFFFF',
+    '/images/nur.png',
     'https://via.placeholder.com/1300x500/e67833/FFFFFF',
     'https://via.placeholder.com/1300x500/222f38/FFFFFF',
     'https://via.placeholder.com/1300x500/191b1f/FFFFFF',
@@ -44,6 +44,30 @@ const imgAPI = {
     'https://via.placeholder.com/640x400/db4b16/FFFFFF',
     'https://via.placeholder.com/640x960/143277/FFFFFF',
     'https://via.placeholder.com/640x427/00a526/FFFFFF',
+  ],
+  skills: [
+    '/images/react.png',
+    '/images/next.png',
+    '/images/javascript.png',
+    '/images/typescript.png',
+    '/images/nodejs.png',
+    '/images/express.png',
+    '/images/mongodb.png',
+    '/images/mongoose.png',
+    '/images/prisma.png',
+    '/images/redux.png',
+    '/images/postgresql.png',
+  ],
+  projects: [
+    '/images/projects/pro.png',
+    '/images/projects/car.png',
+    'https://res.cloudinary.com/dyy4n4fmh/image/upload/v1690615223/Screenshot_171_wigyor.png',
+    '/images/projects/law.png',
+    '/images/projects/doctor.png',
+    '/images/projects/landing.png',
+    '/images/projects/pizza.png',
+    '/images/projects/book.png',
+    '/images/projects/typer.png',
   ]
 };
 
