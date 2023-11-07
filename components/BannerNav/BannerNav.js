@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTranslation } from 'next-i18next';
+import { Typewriter } from 'react-simple-typewriter';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import ui from '~/theme/config';
@@ -66,7 +67,20 @@ function BannerNav(props) {
               </Typography>
               <Typography variant="h2" className={text.title}>
                 {t('femine-landing.banner_me')}
-                &nbsp;Jena, UI Designer
+                &nbsp;Nur Mohammad,
+                <br />
+                I
+                <Typewriter
+                  // eslint-disable-next-line quotes
+                  words={["'m Junior Full Stack Developer", ' love creating creative websites']}
+                  loop={100}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+
+                />
               </Typography>
               {!isTablet && (
                 <Fragment>
@@ -74,17 +88,17 @@ function BannerNav(props) {
                     {t('femine-landing.banner_desc')}
                   </Typography>
                   <div className={classes.socmed}>
-                    <Button variant="outlined" className={classes.download} component="a">Download CV</Button>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    <Button href="https://drive.google.com/file/d/1Z7Amg7Xm47CCy2gJC-c8Sfs4il4R0pnr/view?usp=drive_link" target="_blank" variant="outlined" className={classes.download} component="a">Download CV</Button>
+                    <IconButton href="https://web.facebook.com/nurmohammad54800/" target="_blank" aria-label="Delete" className={classes.iconSet} size="small">
                       <i className="ion-logo-facebook" />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-twitter" />
+                    <IconButton href="https://github.com/nurmohammad83" target="_blank" aria-label="Delete" className={classes.iconSet} size="small">
+                      <i className="ion-logo-github" />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    <IconButton href="https://www.instagram.com/noor__5480/" target="_blank" aria-label="Delete" className={classes.iconSet} size="small">
                       <i className="ion-logo-instagram" />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    <IconButton href="https://www.linkedin.com/in/nur-mohammad-0a1137259/" target="_blank" aria-label="Delete" className={classes.iconSet} size="small">
                       <i className="ion-logo-linkedin" />
                     </IconButton>
                   </div>

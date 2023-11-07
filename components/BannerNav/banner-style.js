@@ -74,14 +74,28 @@ const bannerStyles = makeStyles({ uniqId: 'banner' })((theme, _params, classes) 
       textAlign: 'center',
       margin: '0 auto'
     },
-    '& h4, & h2, & h5': {
+    '& h4': {
+      marginBottom: theme.spacing(1)
+    },
+    '& h2, & h5': {
       marginBottom: theme.spacing(3)
     }
   },
+  iconSet: {
+    margin: theme.spacing(0),
+    padding: theme.spacing(0),
+    color: theme.palette.primary.dark,
+    width: 36,
+    height: 36,
+    '& i': {
+      color: alpha(theme.palette.common.white, 0.75),
+    }
+  },
   socmed: {
-    marginBottom: theme.spacing(3),
+    marginBottom: theme.spacing(0),
     '& button': {
-      margin: theme.spacing(),
+      margin: theme.spacing(0),
+      padding: theme.spacing(0),
       color: theme.palette.primary.dark,
       width: 36,
       height: 36,
