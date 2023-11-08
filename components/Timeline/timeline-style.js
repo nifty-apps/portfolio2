@@ -103,6 +103,35 @@ const timelineStyles = makeStyles({ uniqId: 'timeline' })((theme, _params, class
       }
     }
   },
+  resStyle: {
+    listStyle: 'none',
+    paddingLeft: theme.spacing(2),
+    marginBottom: theme.spacing(1),
+    position: 'relative',
+    [theme.breakpoints.down('md')]: {
+      paddingLeft: 20
+    },
+    '&:last-child': {
+      marginBottom: 0
+    },
+    '&:before': {
+      content: '""',
+      borderRadius: '50%',
+      width: 16,
+      height: 16,
+      background: theme.palette.primary.main,
+      border: `4px solid ${theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.background.paper}`,
+      position: 'absolute',
+      left: -5,
+      top: 5,
+      [theme.breakpoints.down('md')]: {
+        left: 0
+      }
+    },
+    [`& .${classes.time}`]: {
+      color: theme.palette.text.secondary,
+    },
+  },
   progress: {
     paddingBottom: theme.spacing(8),
     [theme.breakpoints.up('sm')]: {

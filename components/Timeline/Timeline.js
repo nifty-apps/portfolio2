@@ -53,7 +53,7 @@ function Timeline() {
                       animateOnce
                       animateIn="fadeInLeftShort"
                       offset={200}
-                      delay={400}
+                      delay={300}
                       duration={0.3}
                     >
                       <div>
@@ -61,20 +61,13 @@ function Timeline() {
                         <Typography gutterBottom>React Js Developer</Typography>
                         <Typography className={classes.time}>Sep 2023 - Present</Typography>
                       </div>
-                    </ScrollAnimation>
-                  </li>
-                  <li>
-                    <ScrollAnimation
-                      animateOnce
-                      animateIn="fadeInLeftShort"
-                      offset={300}
-                      delay={500}
-                      duration={0.3}
-                    >
+                      <p>Responsibility:</p>
                       <div>
-                        <Typography variant="h3" gutterBottom className={text.subtitle2}>POLACITY</Typography>
-                        <Typography gutterBottom>Web Developer</Typography>
-                        <Typography className={classes.time}>Des 2022 - Apr 2023</Typography>
+                        <p className={classes.resStyle}>Developed and maintained React components using TypeScript.</p>
+                        <p className={classes.resStyle}>Integrate front-end components seamlessly with the backend services and GraphQL APIs.</p>
+                        <p className={classes.resStyle}>
+                          Add new feature, fixing bug.
+                        </p>
                       </div>
                     </ScrollAnimation>
                   </li>
