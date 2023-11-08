@@ -70,7 +70,7 @@ const testiStyles = makeStyles({ uniqId: 'testi' })((theme, _params, classes) =>
     }
   },
   title: {
-    color: theme.palette.text.secondary,
+    color: theme.palette.primary.main,
   },
   popover: {
     pointerEvents: 'none',
