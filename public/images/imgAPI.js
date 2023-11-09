@@ -61,7 +61,7 @@ const imgAPI = {
   projects: [
     '/images/projects/pro.png',
     '/images/projects/car.png',
-    'https://res.cloudinary.com/dyy4n4fmh/image/upload/v1690615223/Screenshot_171_wigyor.png',
+    '/images/projects/pcbuilder.png',
     '/images/projects/law.png',
     '/images/projects/doctor.png',
     '/images/projects/landing.png',
