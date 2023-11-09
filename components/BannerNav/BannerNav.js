@@ -72,7 +72,7 @@ function BannerNav(props) {
                 I
                 <Typewriter
                   // eslint-disable-next-line quotes
-                  words={["'m Junior Full Stack Developer", ' love creating creative websites']}
+                  words={["'m MERN Stack Developer", ' love creating creative websites']}
                   loop={100}
                   cursor
                   cursorStyle="_"
