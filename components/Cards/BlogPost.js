@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
@@ -14,6 +15,7 @@ function BlogPost(props) {
     img,
     title,
     desc,
+    link,
   } = props;
 
   const { t } = useTranslation('common');
@@ -28,8 +30,9 @@ function BlogPost(props) {
         <Typography display="block" component="p" className={text.paragraph}>{desc}</Typography>
       </div>
       <Button
-        href="#"
+        href={link}
         color="primary"
+        target="_blank"
         className={classes.readmore}
         classes={{
           root: classes.rootReadmore,

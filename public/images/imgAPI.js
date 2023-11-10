@@ -28,6 +28,11 @@ const imgAPI = {
     'https://via.placeholder.com/1280x851/c4ffd7/757575',
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
+  blog: [
+    '/images/blog/blog_one.png',
+    '/images/blog/blog_two.png',
+    '/images/blog/blog_three.jpeg',
+  ],
   femine: [
     '/images/nur.png',
     'https://via.placeholder.com/1300x500/e67833/FFFFFF',
