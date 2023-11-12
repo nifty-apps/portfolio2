@@ -12,30 +12,35 @@ import useStyle from './services-style';
 
 const services = [
   {
-    icon: 'ion-ios-color-wand',
-    name: 'User Interface Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  },
-  {
-    icon: 'ion-logo-dribbble',
-    name: 'Icon Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  },
-  {
     icon: 'ion-ios-globe',
-    name: 'HTML Prototyping',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    name: 'Web Development',
+    desc: 'Building Your Digital Vision. Code That Brings Your Ideas to Life'
   },
   {
-    icon: 'ion-ios-camera',
-    name: 'Photo Editing',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-ios-phone-landscape',
+    name: 'Responsive Design',
+    desc: 'Ensure that websites adapt to different screen sizes.Crafting Websites for Every Screen.'
+  },
+  {
+    icon: 'ion-ios-warning',
+    name: 'Bug Fixing',
+    desc: 'Resolving Web Glitches and Errors. Your Go-To Bug Busters.'
+  },
+  {
+    icon: 'ion-ios-git-compare',
+    name: 'API Integration',
+    desc: 'Integrate third-party APIs and services to enhance the features.'
   },
   {
     icon: 'ion-ios-snow',
-    name: 'Graphic Illustrations',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  }
+    name: 'Web Design',
+    desc: 'Turning Ideas into Beautiful Websites.'
+  },
+  {
+    icon: 'ion-ios-flash',
+    name: 'Web Maintenance',
+    desc: 'Turning Ideas into Beautiful Websites.'
+  },
 ];
 
 function Services() {

@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/femine-logo.svg';
+import logo from '~/public/images/logo.png';
 import useStyles from './sidenav-style';
 import navMenu from './menu';
 

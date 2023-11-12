@@ -53,19 +53,22 @@ const useStyles = makeStyles({ uniqId: 'home' })(theme => ({
     marginTop: theme.spacing(10)
   },
   containerWrap: {
-    marginTop: -40,
+    marginBottom: 0,
     '& > section': {
       position: 'relative'
     }
   },
   parallaxWrap: {
-    position: 'relative'
+    position: 'relative',
   },
   bottomDeco: {
-    top: -200,
+    top: -90,
     position: 'absolute',
     width: '100%',
-    height: 'calc(100% + 200px)'
+    height: 'calc(100% + 50px)',
+    [theme.breakpoints.down('md')]: {
+      top: -40,
+    }
   }
 }));
 

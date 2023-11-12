@@ -3,7 +3,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import Carousel from 'react-slick';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import { useTranslation } from 'next-i18next';
 import { useText } from '~/theme/common';
@@ -14,35 +13,23 @@ import imgApi from '~/public/images/imgAPI';
 
 const blogData = [
   {
-    img: imgApi.photo[0],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: imgApi.blog[0],
+    title: 'Async/Await Keywords',
+    desc: 'Asynchronous code is notoriously hard to understand and debug…',
+    link: 'https://medium.com/@mohammadnur5480/async-await-keywords-with-array-map-in-react-41ece229a8cc'
   },
   {
-    img: imgApi.photo[1],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    img: imgApi.blog[1],
+    title: 'Some of the most used codes',
+    desc: 'Have you ever wondered what codes are most used by programmers…',
+    link: 'https://medium.com/@mohammadnur5480/some-of-the-most-used-codes-in-javascript-a018bb51d850'
   },
   {
-    img: imgApi.photo[2],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
-  },
-  {
-    img: imgApi.photo[3],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
-  },
-  {
-    img: imgApi.photo[4],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
-  },
-  {
-    img: imgApi.photo[5],
-    title: 'Vivamus sit amet interdum elit',
-    desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
-  },
+    img: imgApi.blog[2],
+    title: 'React Hooks and stale state',
+    desc: 'If you’re using React Hooks you might encounter a scenario where…',
+    link: 'https://medium.com/@mohammadnur5480/react-hooks-and-stale-state-440655a9daec'
+  }
 ];
 
 function Blog() {
@@ -98,7 +85,6 @@ function Blog() {
         <Typography gutterBottom className={text.paragraph}>
           {t('femine-landing.blog_desc')}
         </Typography>
-        <Button className={classes.link} color="primary" href="#">luxi-theme.blog.com</Button>
       </div>
       <div className={classes.sliderWrap}>
         <div className={classes.carousel}>
@@ -121,6 +107,7 @@ function Blog() {
                   img={item.img}
                   title={item.title}
                   desc={item.desc}
+                  link={item.link}
                 />
               </div>
             ))}

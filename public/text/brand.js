@@ -2,8 +2,8 @@ import imgAPI from '~/public/images/imgAPI';
 
 const brand = {
   femine: {
-    name: 'Jena Doe',
-    title: 'UI Designer',
+    name: 'Nur Mohammad',
+    title: 'MERN STACK Developer',
     desc: 'Iluxi Profile - React Single Landing Page Template',
     prefix: 'Iluxi',
     footerText: 'Iluxi Theme 2022',

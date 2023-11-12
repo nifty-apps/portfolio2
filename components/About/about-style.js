@@ -44,6 +44,18 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
       overflow: 'auto'
     }
   },
+  gh: {
+    color: '#878787'
+  },
+  fb: {
+    color: '#193CCC'
+  },
+  in: {
+    color: '#0050FF'
+  },
+  ig: {
+    color: '#F41056'
+  },
   item: {
     textAlign: 'center',
     color: gold,
@@ -55,29 +67,12 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    [theme.breakpoints.up('sm')]: {
-      background: `linear-gradient(120deg, ${theme.palette.secondary.light}, ${theme.palette.primary.main})`,
-      '&:before': {
-        background: theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.background.paper,
-        content: '""',
-        borderRadius: '50%',
-        position: 'absolute',
-        width: 'calc(100% - 4px)',
-        height: 'calc(100% - 4px)',
-        left: 2,
-        top: 2
-      },
-    },
-    [theme.breakpoints.down('sm')]: {
-      paddingLeft: theme.spacing(3),
-      paddingRight: theme.spacing(3)
-    },
     '& > div': {
       position: 'relative',
       zIndex: 1,
     },
     '& figure': {
-      height: 40,
+      height: 90,
       margin: theme.spacing(0, 0, 2),
       [theme.breakpoints.down('md')]: {
         height: 50
@@ -138,18 +133,15 @@ const aboutStyles = makeStyles({ uniqId: 'about' })(theme => ({
   socmed: {
     display: 'flex',
     justifyContent: 'space-evenly',
-    margin: `${theme.spacing(4)} auto`,
     maxWidth: 600,
+    margin: theme.spacing(3, 0, 3, -2),
     '& button': {
-      margin: theme.spacing(1, 2),
+      margin: theme.spacing(),
       width: 36,
       height: 36,
-      '& i': {
-        color: theme.palette.mode === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
-      }
     },
     '& i': {
-      fontSize: 22
+      fontSize: 24
     }
   },
 }));

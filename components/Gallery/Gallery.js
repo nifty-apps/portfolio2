@@ -15,65 +15,65 @@ import useStyle from './gallery-style';
 
 const portfolio = [
   {
-    img: imgAPI.femine[6],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[1],
+    title: 'Car Resale',
+    link: 'https://car-resale-d6efe.web.app/',
     size: 'short',
     category: 'cat1'
   },
   {
-    img: imgAPI.femine[7],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.femine[8],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat3'
-  },
-  {
-    img: imgAPI.femine[9],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[2],
+    title: 'Pc Builder',
+    link: 'https://pcbuilder-alpha.vercel.app/',
     size: 'long',
     category: 'cat1'
   },
   {
-    img: imgAPI.femine[10],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[4],
+    title: 'Doctor Portal',
+    link: 'https://doctor-protal-cc252.web.app/',
     size: 'short',
     category: 'cat2'
   },
   {
-    img: imgAPI.femine[11],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[0],
+    title: 'ProTechFixers',
+    link: 'https://appliance-repair-frontend-main-rho.vercel.app/',
+    size: 'long',
+    category: 'cat1'
+  },
+  {
+    img: imgAPI.projects[3],
+    title: 'Lawyer',
+    link: 'https://lawyer-service-cb0ae.web.app/',
+    size: 'short',
+    category: 'cat2'
+  },
+  {
+    img: imgAPI.projects[6],
+    title: 'Pizza',
+    link: 'https://nurmohammad83.github.io/pizza/',
     size: 'short',
     category: 'cat3'
   },
   {
-    img: imgAPI.femine[12],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[5],
+    title: 'NextLand',
+    link: 'https://nextland.netlify.app/',
+    size: 'short',
+    category: 'cat3'
+  },
+  {
+    img: imgAPI.projects[7],
+    title: 'GeniusStore',
+    link: 'https://book-frontend-theta.vercel.app/',
     size: 'short',
     category: 'cat1'
   },
   {
-    img: imgAPI.femine[14],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
-  },
-  {
-    img: imgAPI.femine[13],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.projects[8],
+    title: 'Speed Typer',
+    link: 'https://typingspeedmaster.netlify.app/',
     size: 'long',
     category: 'cat2'
   },
@@ -165,31 +165,19 @@ function Gallery() {
             onClick={() => filterChildren('cat1')}
             className={filter === 'cat1' ? classes.selected : ''}
           >
-            Category 1
+            Full Stack
           </Button>
           <Button
             onClick={() => filterChildren('cat2')}
             className={filter === 'cat2' ? classes.selected : ''}
           >
-            Category 2
+            Frontend
           </Button>
           <Button
             onClick={() => filterChildren('cat3')}
             className={filter === 'cat3' ? classes.selected : ''}
           >
-            Category 3
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat4')}
-            className={filter === 'cat4' ? classes.selected : ''}
-          >
-            Category 4
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat5')}
-            className={filter === 'cat5' ? classes.selected : ''}
-          >
-            Category 5
+            Landing Page
           </Button>
         </div>
         {!isMobile ? (

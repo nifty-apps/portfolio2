@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Snackbar from '@mui/material/Snackbar';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import { useTranslation } from 'next-i18next';
+import emailjs from '@emailjs/browser';
 import { useText } from '~/theme/common';
 import useStyles from './contact-style';
 
@@ -17,7 +18,6 @@ function Form() {
     name: '',
     email: '',
     phone: '',
-    company: '',
     message: ''
   });
 
@@ -28,7 +28,34 @@ function Form() {
   };
 
   const handleSubmit = () => {
-    setNotif(true);
+    // Prepare the email parameters
+    const emailParams = {
+      from_name: values.name,
+      from_email: values.email,
+      phone: values.phone,
+      message: values.message,
+    };
+
+    // Send the email
+    emailjs
+      .send(
+        'service_z3gq3wg',
+        'template_k4h8shh',
+        emailParams,
+        'TSTMAr0NyGDaWbvz4'
+      )
+      .then(
+        (response) => {
+          console.log('Email sent successfully:', response);
+          values.name = '';
+          values.email = '';
+          values.message = '';
+          setNotif(true);
+        },
+        (error) => {
+          console.error('Email sending failed:', error);
+        }
+      );
   };
 
   const handleClose = () => {
@@ -46,7 +73,7 @@ function Form() {
         ContentProps={{
           'aria-describedby': 'message-id',
         }}
-        message={<span id="message-id">Message Sent</span>}
+        message={<span id="message-id">Your message has been sent</span>}
       />
       <Paper className={classes.formBox}>
         <Grid container spacing={6}>

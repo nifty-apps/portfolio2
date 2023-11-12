@@ -20,13 +20,18 @@ const footerStyles = makeStyles({ uniqId: 'footer' })((theme) => ({
       textTransform: 'uppercase',
     }
   },
-  margin: {
-    margin: theme.spacing(2)
+  iconSet: {
+    margin: theme.spacing(0),
+    padding: theme.spacing(0),
+    color: theme.palette.primary.dark,
+    width: 36,
+    height: 36,
   },
   socmed: {
     margin: theme.spacing(3, 0),
-    '& button': {
-      margin: theme.spacing(),
+    '& a': {
+      margin: theme.spacing(1),
+      padding: theme.spacing(0),
       width: 36,
       height: 36,
     },
@@ -35,7 +40,7 @@ const footerStyles = makeStyles({ uniqId: 'footer' })((theme) => ({
     }
   },
   tw: {
-    color: '#20B1D1'
+    color: '#736B6B'
   },
   fb: {
     color: '#193CCC'
@@ -44,7 +49,7 @@ const footerStyles = makeStyles({ uniqId: 'footer' })((theme) => ({
     color: '#0050FF'
   },
   ig: {
-    color: '#A418E6'
+    color: '#FF2C17'
   },
   contact: {
     color: theme.palette.text.secondary,

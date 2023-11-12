@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Divider from '@mui/material/Divider';
 import { useTranslation } from 'next-i18next';
-import logo from '~/public/images/femine-logo.svg';
+import logo from '~/public/images/logo.png';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './footer-style';
@@ -46,31 +46,31 @@ function Footer() {
                   </Typography>
                 </div>
                 <div className={classes.socmed}>
-                  <IconButton aria-label="Delete" className={classes.margin} size="small">
+                  <IconButton href="https://web.facebook.com/nurmohammad54800/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
                     <i className={cx('ion-logo-facebook', classes.fb)} />
                   </IconButton>
-                  <IconButton aria-label="Delete" className={classes.margin} size="small">
+                  <IconButton href="https://github.com/nurmohammad83" target="_blank" aria-label="Delete" className={classes.margin} size="small">
+                    <i className={cx('ion-logo-github', classes.tw)} />
+                  </IconButton>
+                  <IconButton href="https://www.instagram.com/noor__5480/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
                     <i className={cx('ion-logo-instagram', classes.ig)} />
                   </IconButton>
-                  <IconButton aria-label="Delete" className={classes.margin} size="small">
-                    <i className={cx('ion-logo-twitter', classes.tw)} />
-                  </IconButton>
-                  <IconButton aria-label="Delete" className={classes.margin} size="small">
+                  <IconButton href="https://www.linkedin.com/in/nur-mohammad-0a1137259/" aria-label="Delete" className={classes.margin} size="small">
                     <i className={cx('ion-logo-linkedin', classes.in)} />
                   </IconButton>
                 </div>
-                <Button variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
+                <Button href="https://drive.google.com/file/d/1Z7Amg7Xm47CCy2gJC-c8Sfs4il4R0pnr/view?usp=drive_link" target="_blank" variant="outlined" color="primary" className={classes.download} component="a">Download CV</Button>
                 <div className={classes.contact}>
                   <Typography className={text.paragraph}>
                     {t('femine-landing.footer_contact')}
                     <br />
-                    +12 345 678 90
+                    +8801935399238
                   </Typography>
                   <Divider className={classes.divider} />
                   <Typography className={text.paragraph}>
                     {t('femine-landing.footer_hello')}
                     <br />
-                    jenadoe.skype
+                    mohammadnur5480@gmail.com
                   </Typography>
                 </div>
               </div>

@@ -8,7 +8,7 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
   selected: {},
   filter: {
     position: 'relative',
-    zIndex: 20,
+    zIndex: 5,
     display: 'flex',
     overflow: 'auto',
     width: '100%',
@@ -26,7 +26,7 @@ const galleryStyles = makeStyles({ uniqId: 'gallery' })((theme, _params, classes
         marginRight: theme.spacing(3),
       },
       [`&.${classes.selected}`]: {
-        background: theme.palette.common.black,
+        background: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.common.black,
         color: theme.palette.common.white
       }
     }

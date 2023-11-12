@@ -92,10 +92,6 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
     border: `8px solid ${theme.palette.background.paper}`,
     position: 'relative',
     overflow: 'hidden',
-    borderRadius: theme.rounded.medium,
-    [theme.breakpoints.up('sm')]: {
-      borderRadius: theme.rounded.big,
-    },
     '& button': {
       textAlign: 'left',
       width: '100%',
@@ -107,10 +103,6 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
       position: 'relative',
       margin: 0,
       overflow: 'hidden',
-      borderRadius: theme.rounded.medium,
-      [theme.breakpoints.up('sm')]: {
-        borderRadius: 70
-      },
     },
     [`& .${classes.img}`]: {
       display: 'block',
@@ -146,7 +138,7 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
     backgroundSize: '300%',
     backgroundPosition: '0% 0',
     padding: theme.spacing(3, 4),
-    borderRadius: 70,
+    borderRadius: 30,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -164,6 +156,7 @@ const cardsStyles = makeStyles({ uniqId: 'card' })((theme, _params, classes) => 
       textDecoration: 'underline',
       position: 'relative',
       transform: 'translate(0, 60px)',
+      color: theme.palette.mode === 'dark' ? theme.palette.secondary.light : theme.palette.secondary.dark
     },
   },
   short: {
