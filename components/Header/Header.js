@@ -191,7 +191,7 @@ function Header(props) {
                         <i className={cx('ion-logo-instagram', classes.ig)} />
                       </IconButton>
                       <IconButton href="https://github.com/nurmohammad83" target="_blank" aria-label="Delete" className={classes.margin} size="small">
-                        <i className={cx('ion-logo-github', classes.tw)} />
+                        <i className={cx('ion-logo-github', classes.gh)} />
                       </IconButton>
                       <IconButton href="https://www.linkedin.com/in/nur-mohammad-0a1137259/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
                         <i className={cx('ion-logo-linkedin', classes.in)} />

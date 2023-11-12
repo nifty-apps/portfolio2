@@ -13,7 +13,7 @@ import useStyles from './about-style';
 
 function About() {
   const theme = useTheme();
-  const { classes } = useStyles();
+  const { classes, cx } = useStyles();
   const { classes: text } = useText();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const isTablet = useMediaQuery(theme.breakpoints.up('md'));
@@ -30,45 +30,45 @@ function About() {
                 <div className={classes.item}>
                   <div>
                     <figure>
-                      <img src="/images/femine/reward1.svg" alt="badge" />
+                      <img src="/images/femine/phero.png" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>Special Programming</Typography>
-                    <Typography variant="h5">Awards</Typography>
+                    <Typography component="p" className={text.paragraph}>LEVEL 2 WINNER</Typography>
+                    <Typography variant="h5">PHERO</Typography>
                   </div>
                 </div>
                 <div className={classes.item}>
                   <div>
                     <figure>
-                      <img src="/images/femine/reward2.svg" alt="badge" />
+                      <img src="/images/femine/black.png" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>10k videos</Typography>
-                    <Typography variant="h5">Subscriber</Typography>
+                    <Typography component="p" className={text.paragraph}>Black Belt</Typography>
+                    <Typography variant="h5">PHERO</Typography>
                   </div>
                 </div>
                 <div className={classes.item}>
                   <div>
                     <figure>
-                      <img src="/images/femine/reward3.svg" alt="badge" />
+                      <img src="/images/femine/redux.png" alt="badge" />
                     </figure>
-                    <Typography component="p" className={text.paragraph}>Best Design</Typography>
-                    <Typography variant="h5">Awards</Typography>
+                    <Typography component="p" className={text.paragraph}>Redux Award</Typography>
+                    <Typography variant="h5">LWS</Typography>
                   </div>
                 </div>
               </div>
               {!isTablet && (
                 <Fragment>
                   <div className={classes.socmed}>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-facebook" />
+                    <IconButton href="https://web.facebook.com/nurmohammad54800/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
+                      <i className={cx('ion-logo-facebook', classes.fb)} />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-twitter" />
+                    <IconButton href="https://www.instagram.com/noor__5480/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
+                      <i className={cx('ion-logo-instagram', classes.ig)} />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-google" />
+                    <IconButton href="https://github.com/nurmohammad83" target="_blank" aria-label="Delete" className={classes.margin} size="small">
+                      <i className={cx('ion-logo-github', classes.gh)} />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
-                      <i className="ion-logo-linkedin" />
+                    <IconButton href="https://www.linkedin.com/in/nur-mohammad-0a1137259/" target="_blank" aria-label="Delete" className={classes.margin} size="small">
+                      <i className={cx('ion-logo-linkedin', classes.in)} />
                     </IconButton>
                   </div>
                   <Typography variant="h5">

@@ -203,8 +203,8 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
       fontSize: 24
     }
   },
-  tw: {
-    color: '#20B1D1'
+  gh: {
+    color: '#878787'
   },
   fb: {
     color: '#193CCC'
@@ -213,7 +213,7 @@ const headerStyles = makeStyles({ uniqId: 'header' })((theme, _params, classes) 
     color: '#0050FF'
   },
   ig: {
-    color: '#A418E6'
+    color: '#F41056'
   },
   contact: {
     color: theme.palette.text.secondary,
